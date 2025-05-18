@@ -81,9 +81,6 @@ def render_pointcloud(
         projection_matrix,
         renderer=bc.ER_TINY_RENDERER,
     )
-    import cv2
-
-    cv2.imwrite("tmp.png", img[2])
     depth_buffer: np.ndarray = (
         np.array(img[3]).astype(np.float32) * 1000.0
     )  # Convert from mm to meters
