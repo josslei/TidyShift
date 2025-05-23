@@ -153,7 +153,7 @@ def save_scene(
     depth: np.ndarray = rgbd[1]
     cv2.imwrite(
         str(scene_dir / "rgb.png"),
-        cv2.cvtColor((rgb * 255).astype(np.uint8), cv2.COLOR_RGB2BGR),
+        cv2.cvtColor(rgb.astype(np.uint8), cv2.COLOR_RGB2BGR),
     )
     cv2.imwrite(
         str(scene_dir / "depth.png"), (depth * 1000).astype(np.uint16)
