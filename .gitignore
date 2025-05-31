@@ -38,3 +38,4 @@ ENV/
 
 # datasets
 datasets/GSO
+datasets/StructDiffusion
